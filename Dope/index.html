@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dope - Automation as a Service</title>
+    <meta name="description" content="Dope provides enterprise-grade automation solutions including UI, API, Kafka, and Kubernetes automation services.">
+    <meta name="keywords" content="automation, UI automation, API automation, Kafka, Kubernetes, DevOps">
+    <meta property="og:title" content="Dope - Automation as a Service">
+    <meta property="og:description" content="Your trusted partner for enterprise-grade automation solutions.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="logo-text">Dope</span>
+            </div>
+            <div class="preloader-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">Dope</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Automate Everything.<br>Accelerate Your Business.</h1>
+            <p class="hero-tagline">Your trusted partner for enterprise-grade automation solutions. From UI to Kubernetes, we streamline your operations.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="automation-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Automation Services</h2>
+            <p class="section-subtitle">Comprehensive automation solutions tailored to your business needs</p>
+            
+            <div class="services-grid">
+                <!-- UI Automation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>UI Automation</h3>
+                    <p>End-to-end UI testing and automation frameworks that ensure your web and desktop applications work flawlessly across all platforms.</p>
+                    <ul class="service-features">
+                        <li>Selenium Automation</li>
+                        <li>Playwright Testing</li>
+                        <li>Cross-browser Testing</li>
+                        <li>Visual Regression Testing</li>
+                    </ul>
+                </div>
+
+                <!-- API Automation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>API Automation</h3>
+                    <p>Robust API testing and automation solutions to validate functionality, performance, and security of your APIs.</p>
+                    <ul class="service-features">
+                        <li>REST & SOAP Testing</li>
+                        <li>GraphQL Automation</li>
+                        <li>API Monitoring</li>
+                        <li>Contract Testing</li>
+                    </ul>
+                </div>
+
+                <!-- Kafka Automation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <h3>Kafka Automation</h3>
+                    <p>Enterprise Kafka cluster management, streaming automation, and real-time data pipeline solutions.</p>
+                    <ul class="service-features">
+                        <li>Cluster Management</li>
+                        <li>Stream Processing</li>
+                        <li>Topic Automation</li>
+                        <li>Monitoring & Alerts</li>
+                    </ul>
+                </div>
+
+                <!-- Kubernetes Automation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <h3>Kubernetes Automation</h3>
+                    <p>Full-cycle Kubernetes orchestration, deployment automation, and container management solutions.</p>
+                    <ul class="service-features">
+                        <li>CI/CD Pipelines</li>
+                        <li>Container Orchestration</li>
+                        <li>Auto-scaling</li>
+                        <li>Infrastructure as Code</li>
+                    </ul>
+                </div>
+
+                <!-- DevOps Automation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>DevOps Automation</h3>
+                    <p>Complete DevOps transformation with automated workflows, continuous integration, and deployment pipelines.</p>
+                    <ul class="service-features">
+                        <li>CI/CD Setup</li>
+                        <li>Infrastructure Automation</li>
+                        <li>Configuration Management</li>
+                        <li>Monitoring Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Custom Solutions -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Custom Automation</h3>
+                    <p>Tailored automation solutions designed specifically for your unique business requirements and workflows.</p>
+                    <ul class="service-features">
+                        <li>Process Automation</li>
+                        <li>Workflow Optimization</li>
+                        <li>Scripting & Tools</li>
+                        <li>Consultation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Our streamlined process to transform your business with automation</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Discovery Call</h3>
+                    <p>We start by understanding your business challenges, current processes, and automation goals.</p>
+                </div>
+                
+                <div class="process-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Strategy & Planning</h3>
+                    <p>Our experts create a comprehensive automation roadmap tailored to your specific requirements.</p>
+                </div>
+                
+                <div class="process-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Implementation</h3>
+                    <p>We build and integrate the automation solutions with your existing systems seamlessly.</p>
+                </div>
+                
+                <div class="process-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Testing & Optimization</h3>
+                    <p>Rigorous testing ensures quality, followed by continuous optimization for peak performance.</p>
+                </div>
+                
+                <div class="process-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>We provide 24/7 monitoring, maintenance, and support to ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <p class="section-subtitle">Flexible pricing options to fit your automation needs</p>
+            
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="period">/project</span>
+                        </div>
+                        <p>Perfect for small projects and initial automation</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> UI Automation Setup</li>
+                        <li><i class="fas fa-check"></i> 5 Test Scripts</li>
+                        <li><i class="fas fa-check"></i> Basic API Testing</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                        <li><i class="fas fa-check"></i> 1 Month Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Kafka Automation</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Kubernetes Setup</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2,499</span>
+                            <span class="period">/project</span>
+                        </div>
+                        <p>Ideal for growing businesses with advanced needs</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full UI Automation</li>
+                        <li><i class="fas fa-check"></i> Unlimited Test Scripts</li>
+                        <li><i class="fas fa-check"></i> Advanced API Testing</li>
+                        <li><i class="fas fa-check"></i> Kafka Cluster Setup</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> 3 Months Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Kubernetes Full Setup</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">Custom</span>
+                        </div>
+                        <p>Complete automation solution for large organizations</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Complete Automation Suite</li>
+                        <li><i class="fas fa-check"></i> Custom Development</li>
+                        <li><i class="fas fa-check"></i> Full Kafka Management</li>
+                        <li><i class="fas fa-check"></i> Kubernetes Mastery</li>
+                        <li><i class="fas fa-check"></i> 24/7 Dedicated Support</li>
+                        <li><i class="fas fa-check"></i> Unlimited Support</li>
+                        <li><i class="fas fa-check"></i> On-premise Deployment</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Dope</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Empowering Businesses Through Automation</h3>
+                    <p>At Dope, we believe that automation is the key to unlocking business potential. Our team of expert engineers specializes in delivering cutting-edge automation solutions that transform how companies operate.</p>
+                    <p>We don't just build tools; we build partnerships. Our client-focused approach ensures that every solution is tailored to meet your specific challenges and goals.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert Team of Engineers</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support & Maintenance</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Scalable Solutions</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Competitive Pricing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to transform your business with automation? Let's talk!</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@dopeautomation.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="ui-automation">UI Automation</option>
+                            <option value="api-automation">API Automation</option>
+                            <option value="kafka-automation">Kafka Automation</option>
+                            <option value="kubernetes">Kubernetes</option>
+                            <option value="devops">DevOps Automation</option>
+                            <option value="custom">Custom Solution</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Dope</span>
+                    <p>Automation as a Service</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">UI Automation</a></li>
+                        <li><a href="#services">API Automation</a></li>
+                        <li><a href="#services">Kafka Automation</a></li>
+                        <li><a href="#services">Kubernetes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dope Automation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
